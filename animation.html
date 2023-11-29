@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tank{
+            border: 1px solid black;
+            width: 770px;
+            height: 480px;
+        }
+        .pic:hover{
+            border-color: chocolate;
+
+        }
+        .fish{
+            position: relative;
+            top: -330px;
+            right: -600px;
+            /* transition: all 5s; */
+            animation-name: fish;
+            animation-duration: 1s;
+        }
+        @keyframes fish{
+            to{
+                margin-right: 100px;
+            }
+            from{
+                margin-left: 4px;
+            }
+            
+
+            
+        }
+        .fish1{
+            position: relative;
+            top: -280px;
+            right: -500px;
+            transform: translate(0,150px);
+            transition: all 6s;
+            animation: fish 12s linear infinite;
+        }
+       
+        
+        .fish2{
+            position: relative;
+            top: -200px;
+            transition: all 2s;
+        }
+       
+        
+        .fish3{
+            position: relative;
+            top: -480px;
+            transition: all 5s;
+        }
+
+        .fish4{
+            position: relative;
+            top: -100px;
+            transition: all 2s;
+        }
+        @keyframes fish4{
+            0%{
+                top: 140;
+            }
+            50%{
+                top:30;
+            }
+            100%{
+                left: 60;
+            }
+        }
+       
+  
+        
+    </style>
+</head>
+<body> 
+    <div class="tank">
+     <div class="pic">
+        <img src="./image/green.webp" alt="">
+        <img class="fish" src="https://i.ytimg.com/vi/vXIek3627DY/maxresdefault.jpg"height="65px"width="95px" alt="">
+        <img class="fish1" src="https://cdn.pixabay.com/photo/2016/12/31/21/22/discus-fish-1943755_1280.jpg"height="65px"width="65px" alt="">
+        <img class="fish2" src="https://cdn.pixabay.com/photo/2017/11/05/18/33/fish-2921430_640.jpg"height="65px"width="65px" alt="">
+        <img class="fish3" src="https://cdn.pixabay.com/photo/2014/01/03/02/54/beautiful-237906_640.jpg"height="65px"width="65px" alt="">
+        <img class="fish4" src="https://cdn.pixabay.com/photo/2020/04/18/14/01/blue-5059268_640.jpg"height="65px"width="65px" alt="">
+     </div>
+
+
+
+
+    </div>
+</body>
+</html>
